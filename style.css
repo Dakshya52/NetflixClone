@@ -2,13 +2,69 @@
     margin: 0;
     padding: 0;
 }
-main{
-    background-image: url(assets/img/bg.png);
-    height: 80vh;
-}
-main .box{
-    height: 80vh;
-    width: 100%;
-    opacity: 0.2;
+body{
     background-color: black;
+}
+.main{
+    background-image: url(assets/img/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 95vh;
+    position: relative;
+    max-width: max(1200px,100vw);
+}
+.main .box{
+    height: 95vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 75vw;
+    margin: auto;
+    align-items: center;
+    height: 62px;
+    padding: 15px;
+}
+nav img{
+    color: red;
+    width: 144px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+    gap: 21px;
+    padding: 30px;
+}
+.hero> :first-child{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
 }
