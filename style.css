@@ -70,6 +70,24 @@ nav button{
     font-weight: 400;
     text-align: center;
 }
+@media  screen and (max-width: 1101px) {
+    .hero> :first-child{  
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+    .hero> :nth-child(3){
+        font-size: 18px;
+    }
+    .btn-red-nav{
+        font-size: 10px;
+    }
+    .btn-red-sm{
+        font-size: 10px;
+    }
+}
 .separation{
     height: 8px;
     background-color: gray;
@@ -152,7 +170,11 @@ nav button{
     align-items: center;
     padding-bottom: 120px;
     padding-top: 100px;
-    
+}
+@media screen and (max-width: 896px) {
+    .first{
+        flex-wrap: wrap;
+    }
 }
 .first div{
     display: flex;
@@ -163,7 +185,7 @@ nav button{
     position:relative;
 }
 .sec-img img{
-    width: 30vw;
+    width: 400px; 
     position: relative;
     z-index: 10;
 }
@@ -186,8 +208,8 @@ nav button{
     font-style: normal;
 }
 .third .sec-img video{ 
-    width: 287px;
-    height: 203px;
+    width: 242px;
+    height: 150px;
     position: absolute;
     top: 24px;
     right: 83px;
@@ -246,8 +268,50 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
 }
+@media screen and (max-width: 897px){
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 .footer-item{
     display: flex;
     flex-direction: column;
     gap: 23px;
+}
+@media screen  and (max-width : 650px){
+    .btn-red-nav{
+        height: 50%;
+    }
+    .btn-red-sm{
+        font-size: 10px;
+        
+        height: 50%;
+    }
+    nav :first-child{
+         width: 89px;
+    }
+    nav :nth-child(2){
+        width: 89px;
+    }
+    .email{
+        flex-wrap: wrap;
+    }
+    .text{
+        size: 50%;
+    }
+    .main{
+        height: 135vh;
+    }
+    .btn-red{
+        align-self: center;
+    }
+    .main .box{
+        height: 127vh;
+    }
+}
+@media screen  and (max-width: 375px){
+    .main .box{
+        height: 109vh;
+    }
+    
 }
