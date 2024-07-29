@@ -294,13 +294,14 @@ footer{
         width: 89px;
     }
     .email{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .text{
         size: 50%;
     }
     .main{
         height: 135vh;
+        background-size: 173vh;
     }
     .btn-red{
         align-self: center;
@@ -308,6 +309,7 @@ footer{
     .main .box{
         height: 127vh;
     }
+
 }
 @media screen  and (max-width: 375px){
     .main .box{
